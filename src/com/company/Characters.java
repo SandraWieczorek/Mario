@@ -7,6 +7,7 @@ public class Characters {
     public int counter;
     private  boolean walk;
     private boolean right;
+    private  boolean left;
     public Characters(int x,int y,int widht,int height)
     {
         this.x = x;
@@ -14,12 +15,21 @@ public class Characters {
         this.widht = widht;
         this.height = height;
         this.right = true;
+        this.left = true;
         this.counter = 0;
         this.walk = true;
     }
 
     public boolean isWalk() {
         return walk;
+    }
+
+    public boolean isLeft() {
+        return left;
+    }
+
+    public void setLeft(boolean left) {
+        this.left = left;
     }
 
     public void setWalk(boolean walk) {
@@ -72,11 +82,11 @@ public class Characters {
 
     public boolean ContactBeforePipe(Object object)
     {
-        if((this.x+this.widht < object.getX() || this.x+ this.widht > object.getX() || this.y + this.height <= object.getX() ||  this.y >= object.getY() + object.getHeight()))
-        {
-            return false;
-        }
-        else return true;
+        if(this.right == true) {
+            if ((this.x + 60 == object.getX())) {
+                return true;
+            } else return false;
+        }else return true;
     }
     public void Contact(Object object)
     {

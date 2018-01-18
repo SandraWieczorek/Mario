@@ -4,12 +4,9 @@
     <list default="true" id="cbbd8c68-9b82-47ed-9e8b-1adfa338b095" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/Mario/com/company/Characters.class" afterPath="$PROJECT_DIR$/out/production/Mario/com/company/Characters.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mario/com/company/Keyboard.class" afterPath="$PROJECT_DIR$/out/production/Mario/com/company/Keyboard.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mario/com/company/Render.class" afterPath="$PROJECT_DIR$/out/production/Mario/com/company/Render.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mario/com/company/Mario.class" afterPath="$PROJECT_DIR$/out/production/Mario/com/company/Mario.class" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Characters.java" afterPath="$PROJECT_DIR$/src/com/company/Characters.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Keyboard.java" afterPath="$PROJECT_DIR$/src/com/company/Keyboard.java" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Mario.java" afterPath="$PROJECT_DIR$/src/com/company/Mario.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Render.java" afterPath="$PROJECT_DIR$/src/com/company/Render.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Render.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+              <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1008#1009#0" expanded="true" />
@@ -87,8 +84,8 @@
       <file leaf-file-name="Mario.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Mario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#384#385#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
@@ -321,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516276174651</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="//">
+      <created>1516283470459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516283470459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -361,7 +365,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="//commit 1 bylo false jest true" />
-    <option name="LAST_COMMIT_MESSAGE" value="//commit 1 bylo false jest true" />
+    <MESSAGE value="//" />
+    <option name="LAST_COMMIT_MESSAGE" value="//" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -610,7 +615,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Render.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+          <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1008#1009#0" expanded="true" />
@@ -654,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Mario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#384#385#0" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
