@@ -15,7 +15,7 @@ public class Characters {
         this.height = height;
         this.right = true;
         this.counter = 0;
-        this.walk = false;
+        this.walk = true;
     }
 
     public boolean isWalk() {
@@ -72,7 +72,7 @@ public class Characters {
 
     public boolean ContactBeforePipe(Object object)
     {
-        if(!(this.x+this.widht < object.getX() || this.x+ this.widht > object.getX() || this.y + this.height <= object.getX() ||  this.y >= object.getY() + object.getHeight()))
+        if((this.x+this.widht < object.getX() || this.x+ this.widht > object.getX() || this.y + this.height <= object.getX() ||  this.y >= object.getY() + object.getHeight()))
         {
             return false;
         }

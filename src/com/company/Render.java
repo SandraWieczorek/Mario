@@ -115,12 +115,12 @@ public class Render extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics g2 = (Graphics2D)g;
-       /* if(this.mario.ContactBeforePipe(pipe) == true)
+        if(this.mario.ContactBeforePipe(pipe) == true)
         {
             System.out.println("true");
             this.mario.setWalk(false);
             this.dx = 0;
-        }*/
+        }
         this.mario.MoveMario(block);
         this.mario.Limitations();
         this.deplacementScene();

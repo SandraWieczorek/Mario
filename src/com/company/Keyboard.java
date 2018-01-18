@@ -12,7 +12,7 @@ public class Keyboard implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
        // Main.render.setDx(0);
-        if(e.getKeyCode() == KeyEvent.VK_RIGHT)
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT && Main.render.mario.isWalk() == true)
         {
             if(Main.render.getXposition()== -1)
             {
