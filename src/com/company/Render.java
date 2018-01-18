@@ -2,9 +2,11 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class Render extends JPanel {
+public class Render extends JPanel  implements ActionListener{
     public Rectangle Mario;
     public RedPipe pipe;
     public Block block;
@@ -97,17 +99,18 @@ public class Render extends JPanel {
     }
     public void deplacementMario()
     {
-        /* if(this.yposition <=150)
+         if(this.yposition <= 150)
             {
-             this.yposition += this.dy;
+                System.out.println(">=150");
+             this.yposition -= this.dy;
             }
             else if ( this.yposition > 360 )
             {
                 this.dy = 0;
                 System.out.println(">360");
-                //mario.setY(360);
-               // yposition += dy;
-            }*/
+                mario.setY(360);
+                yposition += dy;
+            }
 
 
     }
@@ -117,14 +120,18 @@ public class Render extends JPanel {
         Graphics g2 = (Graphics2D)g;
         if(this.mario.ContactBeforePipe(pipe) == true)
         {
-            System.out.println("true");
-            this.mario.setWalk(false);
+            //this.mario.setRight(false);
+            //this.mario.setLeft(true);
+           // this.mario.setJump(true);
             this.dx = 0;
+            this.dx = -1;
+           // this.mario.setY(150);
+           // this.mario.setY(360);
+            System.out.println(this.mario.getX());
         }
-        this.mario.MoveMario(block);
-        this.mario.Limitations();
+        if(this.mario.ContactBeforePipe(pipe) == false) this.mario.setRight(true);
+
         this.deplacementScene();
-        this.deplacementMario();
         this.pipe.deplacement();
 
         g2.setColor(Color.BLUE);
@@ -144,5 +151,23 @@ public class Render extends JPanel {
         g2.setColor(Color.red);
         g2.fillRect(mario.getX(),mario.getY(),mario.getWidht(),mario.getHeight());
 
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        this.deplacementMario();
+        if ( Main.render.mario.getY() > 500-140 )
+        {
+            Main.render.mario.setY(500-140);
+            dy = 0;
+        }
+       // if(Mario.x >=WIDTH) render.repaint();
+       // if(Main.render.mario.getX() < 0) Mario.x = 0;
+        if(Main.render.mario.getY() <= 150)
+        {
+            dy = Main.render.mario.speed;
+            //up = true;
+        }
+        this.repaint();
     }
 }
